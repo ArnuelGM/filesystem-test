@@ -1,0 +1,20 @@
+{
+    "name": "arnuel/www",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        },
+        "files": ["helpers/helpers.php"]
+    },
+    "authors": [
+        {
+            "name": "Arnuel Gutierrez Menco",
+            "email": "argume31@hotmail.com"
+        }
+    ],
+    "require": {
+        "league/flysystem": "^3.15",
+        "league/flysystem-aws-s3-v3": "^3.15",
+        "filp/whoops": "^2.15"
+    }
+}

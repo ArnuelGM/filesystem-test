@@ -1,0 +1,12 @@
+server {
+
+  server_name _;
+  listen 80;
+  
+  location / {
+    rewrite ^/(uploads|archivos|forbident)/(.*)$ /getObject.php break;
+    proxy_set_header X-Replaced-Path $request_uri;
+    proxy_pass http://app;
+  }
+  
+}
